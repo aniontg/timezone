@@ -205,66 +205,58 @@
   margin: 0 0 0 7rem;
   color: #ff0000;
 }
-/* 1. Full-Width Gallery Section */
 .gallery-section {
   display: grid;
-  /* 3 columns layout */
+
   grid-template-columns: 2fr 1.5fr 1.5fr;
-  /* 2 rows with a fixed height */
+
   grid-template-rows: repeat(2, 280px);
   gap: 30px;
 
-  /* Forces section to span the entire screen width */
   width: 100vw;
   max-width: 100%;
   margin: 0;
   box-sizing: border-box;
 
-  /* Arranging the 5 images into the grid */
   grid-template-areas:
     "img1 img2 img3"
     "img1 img2 img4";
 }
 
-/* 2. Image Container Styling */
 .gallery-item {
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Essential for the zoom hover effect so it doesn't overflow bounds */
+  overflow: hidden;
   background-color: #f0f0f0;
 }
 
-/* 3. Image Styling & Smooth Hover Effect */
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Prevents image distortion */
+  object-fit: cover;
   display: block;
   transition:
     transform 0.5s ease,
-    filter 0.5s ease; /* Smooth animation timing */
+    filter 0.5s ease;
 }
-
-/* Hover Effect: Zoom in slightly and add a subtle brightness/contrast tweak */
 .gallery-item:hover img {
-  transform: scale(1.06); /* Zooms the image in by 6% */
-  filter: brightness(0.95); /* Slightly deepens the tones for a luxury feel */
+  transform: scale(1.06);
+  filter: brightness(0.95);
 }
 
-/* Assigning each item to its respective grid area */
 .item-1 {
   grid-area: img1;
-} /* Spans the entire left side  */
+}
 .item-2 {
   grid-area: img2;
-} /* Middle top */
+}
 .item-3 {
   grid-area: img3;
-} /* Right top */
+}
 
 .item-4 {
   grid-area: img4;
-} /* Right bottom */
+}
 
 .popular-section {
   background-color: #ffffff;
@@ -301,14 +293,11 @@
 .popular-red-line {
   border-bottom: 3px solid #ff2020;
 }
-/* Ensure your item wrapper has relative positioning and hidden overflow */
 .popular-item {
   position: relative;
   overflow: hidden;
 }
 
-
-/* 1. Favorite Icon Styling (Hidden by default, fades in at top right) */
 .favorite-btn {
   position: absolute;
   top: 15px;
@@ -330,7 +319,6 @@
   transition: all 0.3s ease;
 }
 
-/* 2. Add to Cart Button Styling */
 .add-to-cart-btn {
   position: absolute;
   bottom: 0;
@@ -356,7 +344,6 @@
   background-color: #ff2020;
 }
 
-/* Trigger Hover States */
 .popular-item:hover .favorite-btn {
   opacity: 1;
   transform: translateY(0);
