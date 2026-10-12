@@ -128,7 +128,6 @@
 
 .shop-btn:hover {
   background-color: #ff0000;
-  interest-delay: 2rem;
 }
 
 .hero-right {
@@ -286,9 +285,6 @@
 .img-popular {
   height: 300px;
   width: 300px;
-}
-.img-popular:hover {
-  opacity: 0.5;
 }
 .popular-red-line {
   border-bottom: 3px solid #ff2020;
