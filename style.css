@@ -204,11 +204,10 @@
   margin: 0 0 0 7rem;
   color: #ff0000;
 }
+
 .gallery-section {
   display: grid;
-
   grid-template-columns: 2fr 1.5fr 1.5fr;
-
   grid-template-rows: repeat(2, 280px);
   gap: 30px;
 
@@ -238,6 +237,7 @@
     transform 0.5s ease,
     filter 0.5s ease;
 }
+
 .gallery-item:hover img {
   transform: scale(1.06);
   filter: brightness(0.95);
@@ -252,7 +252,6 @@
 .item-3 {
   grid-area: img3;
 }
-
 .item-4 {
   grid-area: img4;
 }
