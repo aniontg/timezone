@@ -215,10 +215,6 @@
   max-width: 100%;
   margin: 0;
   box-sizing: border-box;
-
-  grid-template-areas:
-    "img1 img2 img3"
-    "img1 img2 img4";
 }
 
 .gallery-item {
@@ -243,17 +239,28 @@
   filter: brightness(0.95);
 }
 
+/* Item 1 spans 2 rows in the 1st column */
 .item-1 {
-  grid-area: img1;
+  grid-column: 1;
+  grid-row: span 2;
 }
+
+/* Item 2 spans 2 rows in the 2nd column */
 .item-2 {
-  grid-area: img2;
+  grid-column: 2;
+  grid-row: span 2;
 }
+
+/* Item 3 is in the 3rd column, 1st row */
 .item-3 {
-  grid-area: img3;
+  grid-column: 3;
+  grid-row: 1;
 }
+
+/* Item 4 is in the 3rd column, 2nd row  */
 .item-4 {
-  grid-area: img4;
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .popular-section {
