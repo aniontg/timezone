@@ -15,46 +15,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="header-container">
-        <h1 class="logo">Time <span>Zone</span></h1>
+    <header>
+      <nav>
+        <h1>Time <span style="color: red">Zone</span></h1>
 
-        <nav class="nav">
-          <ul>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-            <li class="hot-li">Latest <span>Hot</span></li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-        <div class="header-icons">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li><a href="#new-arrivals">Shop</a></li>
+          <li class="hot-li">Latest <span>HOT</span></li>
+          <li>Contact</li>
+        </ul>
+
+        <div class="nav-icons">
           <i class="fa-solid fa-magnifying-glass"></i>
-
           <i class="fa-regular fa-user"></i>
-
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
-      </div>
+
+        <div class="menubar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
-    <section class="hero-split">
-      <div class="hero-split-container">
-        <div class="hero-left">
-          <h2 class="hero-title-split">Select Your New <br />Perfect Style</h2>
-          <p class="hero-desc-split">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat is aute irure.
-          </p>
-          <a href="#" class="shop-btn">SHOP NOW</a>
-        </div>
+    <!-- -------------------HERO SECTION------------------------- -->
 
-        <div class="hero-right">
-          <img src="./watch.png" alt="Luxury Watch" class="hero-watch-img" />
-        </div>
+    <section class="hero-section">
+      <div class="hero-contents">
+        <h1>Select Your New Perfect Style</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
+          accusantium dolorum libero reiciendis iure fuga officiis iusto
+          incidunt, sunt quisquam.
+        </p>
+
+        <button>Shop Now</button>
+      </div>
+
+      <div class="hero-img">
+        <!-- <div></div> -->
+        <img src="watch.png" alt="" />
       </div>
     </section>
-    <section class="arrival-section">
+
+    <section id="arrival-section">
       <div>
         <div><h1 class="arrival-heading">New Arrivals</h1></div>
 
@@ -111,13 +117,11 @@
         <img src="Watch-on-a-surface.jpg" alt="Gallery Image 3" />
       </div>
 
-
-      <div class="gallery-item item-5">
+      <div class="gallery-item item-4">
         <img src="jeans-watch.jpg" alt="Gallery Image 5" />
       </div>
     </section>
 
-    
     <section class="popular-section">
       <div>
         <div class="popular-div-1">
@@ -281,7 +285,7 @@
         </div>
       </div>
     </section>
-    <section class="action-section">
+    <section id="action-section">
       <div>
         <div class="action-box">
           <div>
